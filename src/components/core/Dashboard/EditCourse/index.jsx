@@ -11,7 +11,7 @@ const EditCourse = () => {
   const {course }= useSelector((state)=>state.course)
   const dispatch = useDispatch()
   const [loading,setLoading] =useState(true);
-  const courseId = useParams();
+  const {courseId} = useParams();
 
   useEffect(()=>{
     ;(async()=>{
