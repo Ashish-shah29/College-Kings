@@ -24,13 +24,7 @@ app.use(fileUpload({
   useTempFiles : true,
   tempFileDir : '/tmp'
 }));
-app.use(
-	cors({
-		origin:"https://study-notion-frontend-kappa-woad.vercel.app/",
-		credentials:true,
-	})
-)
-
+app.use(cors())
 
 const PORT = process.env.PORT || 4000;
 
