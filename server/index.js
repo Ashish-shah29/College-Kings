@@ -26,7 +26,7 @@ app.use(fileUpload({
 }));
 app.use(
 	cors({
-		origin:"http://localhost:3000",
+		origin:"https://study-notion-frontend-kappa-woad.vercel.app/",
 		credentials:true,
 	})
 )
